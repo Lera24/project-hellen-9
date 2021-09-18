@@ -1,0 +1,93 @@
+.guarantee {
+    @media screen and (max-width:$mobile) {
+        background-image: linear-gradient(to bottom,
+        rgba(255,255,255,1) 10%,
+        $grey-background 10%);
+    }
+
+    @media screen and (min-width:$mobile) and (max-width:767px) {
+        background-image: linear-gradient(to bottom,
+        rgba(255,255,255,1) 14%,
+        $grey-background 14%);
+    }
+}
+
+.guarantee__title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    color: $main-text;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
+}
+
+.guarantee__list {
+    padding: 60px 20px 31px 20px;
+
+    @media screen and (min-width: $tablet){
+        margin-top: 30px;
+        padding: 30px 50px 30px 79px;
+        background-color: $grey-background;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-top: 50px;
+        padding: 50px 112px 45px 112px;
+    }
+}
+
+.guarantee__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $grey-dark-text;
+    padding-left: 20px;
+
+    &:not(:last-child) {
+        padding-bottom: 23px;
+        margin-bottom: 4px;
+        border-left: 1px dashed $grey-text;
+    }
+
+    &::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 14.6px;
+    height: 24px;
+    background-image:url('../images/svg/flame.svg');
+    background-color: $grey-background;
+    border-bottom: 4px solid $grey-background;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+       @media screen and (min-width:$desktop) {
+           left: -9px;
+           width: 22px;
+           height: 30px;
+       }
+
+    }
+
+    @media screen and (min-width:$tablet) {
+        &:not(:last-child) {
+        padding-bottom: 20px;
+    }
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 20px;
+        line-height: 28px;
+        padding-left: 30px;
+    }
+    
+}
+
+.guarantee__item-accent {
+    color: $accent;
+}

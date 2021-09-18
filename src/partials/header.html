@@ -1,0 +1,78 @@
+<header>
+<div class="container">
+    <!-- основной логотип -->
+    <a href="index.html" class="headerlogo">
+        <span class="headerlogo__top">
+            <span class="headerlogo__topprefix">Hell</span>
+            <svg class="headerlogo__icon">
+                <use href="images/symbol-defs-optimized.svg#flame">
+                </use>
+            </svg>
+            <span class="headerlogo__topsuffix">en</span>
+        </span>
+        <!-- <br> -->
+        <span class="headerlogo__bottom"><span class="headerlogo__bottom--orange">адский </span>английский</span>
+    </a>
+
+    <!-- панель навигации, будет отображаться только на десктопе -->
+
+    <nav class="header__navigation">
+        <ul class="header__navlist">
+            <li class="header__navlink"><a href="#program">Программы обучения</a></li>
+            <li class="header__navlink"><a href="#about">О нас</a></li>
+            <li class="header__navlink"><a href="#guarantee">Варианты обучения</a></li>
+            <li class="header__navlink"><a href="#footer">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- кнопка открытия модального окна, будет отображаться только на планшете и десктопе -->
+
+    <button class="header__button" data-modal-open>консультация по телефону</button>
+
+    <!-- кнопка открытия бургер-меню, будет отображаться только на смартфоне и планшете -->
+
+    <button class="mobilemenu__openbutton  js-open-menu">
+        <svg class="mobilemenu__openicon" style="width: 25px; height: 12px;">
+            <use href="images/symbol-defs-optimized.svg#burger">
+            </use>
+        </svg>
+    </button>
+    
+</div>
+</header>
+    <!-- разметка бургер-меню, только для планшета и смартфона -->
+    <div class="mobilemenu js-menu-container" id="mobile-menu">
+            <div class="mobilemenu__logowrapper">
+                <p class="burgerlogo">
+                    <span class="burgerlogo__topprefix">Hell</span>
+                    <svg class="burgerlogo__icon">
+                        <use href="images/symbol-defs-optimized.svg#flame"></use>
+                    </svg>
+                    <span class="burgerlogo__topsuffix">en</span><br>
+                    <span class="burgerlogo__bottom">
+                        <span class="burgerlogo__bottom--orange">адский</span>
+                        английский
+                    </span>
+                </p>
+                <button class="mobilemenu__closebutton">
+                    <svg class="mobilemenu__closeicon js-close-menu" width="15" height="15">
+                        <use href="images/symbol-defs-optimized.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobilemenu__navigation">
+                <ul class="mobilemenu__list">
+                    <li class="mobilemenu__link js-close-menu"><a href="#program">Программы обучения</a></li>
+                    <li class="mobilemenu__link js-close-menu"><a href="#about">О нас</a></li>
+                    <li class="mobilemenu__link js-close-menu"><a href="#guarantee">Варианты обучения</a></li>
+                    <li class="mobilemenu__link js-close-menu"><a href="#footer">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <!-- кнопка открытия модального окна из бургер-меню, будет отображаться только на смартфоне -->
+            
+            <button class="burger__button js-close-menu" data-modal-open>консультация по телефону</button>
+
+    <script src="./js/mobile-menu.js"></script>
+
+    </div>
